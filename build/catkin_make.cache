@@ -1,0 +1,2 @@
+jetson_nano_bot/navstack_pub
+-DCATKIN_DEVEL_PREFIX=/home/rasp/catkin_ws/devel -DCMAKE_INSTALL_PREFIX=/home/rasp/catkin_ws/install -DCATKIN_WHITELIST_PACKAGES=navstack_pub -G Unix Makefiles

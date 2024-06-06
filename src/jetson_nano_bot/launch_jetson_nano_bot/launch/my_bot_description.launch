@@ -1,0 +1,6 @@
+<?xml version="1.0"?>
+<launch>
+ <arg name="my_bot" default= "$(find launch_jetson_nano_bot)/urdf/my_robot_base.xacro"/>
+ <param name="robot_description" command="$(find xacro)/xacro '$(arg my_bot)'"/>
+ <node name="robot_state_publisher" pkg="robot_state_publisher" type="robot_state_publisher" />
+</launch>

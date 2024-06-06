@@ -1,0 +1,8 @@
+prefix=/home/rasp/catkin_ws/install
+
+Name: Nav_pack
+Description: Description of Nav_pack
+Version: 0.0.0
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: 

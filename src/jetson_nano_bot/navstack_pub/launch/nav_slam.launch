@@ -1,0 +1,9 @@
+<launch>
+	<include file="$(find navstack_pub)/launch/nav_param.launch" />
+
+					<!--  ************** gmapping ***************  -->
+	<!--<node name="slam_gmapping" pkg="gmapping" type="slam_gmapping" output="screen"/>-->
+
+				<!--  ************* Visualisation **************  -->
+	<node pkg="rviz" type="rviz" name="rviz" args="-d /home/catkin_ws/src/jetson_nano_bot/navstack_pub/maps/book_room.rviz"/>
+</launch>
