@@ -1,0 +1,36 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/rasp/catkin_ws/src/i2c_device_ros/include/i2c_device_ros/i2c_device.hpp
+stdexcept
+-
+cstdint
+-
+string
+-
+limits
+-
+
+/home/rasp/catkin_ws/src/i2c_device_ros/src/i2c_device.cpp
+unistd.h
+-
+linux/i2c-dev.h
+-
+sys/ioctl.h
+-
+fcntl.h
+-
+cerrno
+-
+cstring
+-
+sstream
+-
+i2c_device_ros/i2c_device.hpp
+/home/rasp/catkin_ws/src/i2c_device_ros/src/i2c_device_ros/i2c_device.hpp
+

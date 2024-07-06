@@ -1,0 +1,8 @@
+prefix=/home/rasp/catkin_ws/install
+
+Name: i2c_device_ros
+Description: Description of i2c_device_ros
+Version: 0.0.0
+Cflags: -I${prefix}/include
+Libs: -L${prefix}/lib -li2c_device_ros
+Requires: 

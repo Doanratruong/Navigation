@@ -1,0 +1,8 @@
+prefix=/home/rasp/catkin_ws/devel
+
+Name: mpu6050_driver
+Description: Description of mpu6050_driver
+Version: 0.0.0
+Cflags: -I/home/rasp/catkin_ws/src/mpu6050_driver/include
+Libs: -L${prefix}/lib 
+Requires: roscpp sensor_msgs i2c_device_ros

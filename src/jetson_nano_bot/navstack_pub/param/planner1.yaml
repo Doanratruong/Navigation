@@ -1,0 +1,37 @@
+recovery_behavior_enabled: FALSE
+TrajectoryPlannerROS:
+
+  odom_topic: odom
+
+  max_vel_x: 0.5
+  min_vel_x: 0.3
+  max_vel_x_backwards: -0.5  # maximum backward velocity (negative)
+  min_vel_x_backwards: -0.3  # minimum backward velocity (negative)
+  max_vel_theta: 1.0  # Maximum angular velocity (radians per second)
+  min_vel_theta: -1.0  # Minimum angular velocity
+  min_in_place_vel_theta: 0.8  # Minimum angular velocity for in-place rotations
+  acc_lim_theta: 1.0
+  #max_vel_theta: 0.5
+  #min_vel_theta: -0.5
+  #min_in_place_vel_theta: 0.7
+
+  #acc_lim_theta: 0.07
+  #acc_lim_x: 0.25
+  #acc_lim_Y: 0.25
+
+  holonomic_robot: false
+
+  meter_scoring: true
+
+  xy_goal_tolerance: 0.2
+  yaw_goal_tolerance: 0.01
+  latch_xy_goal_tolerance: false
+  path_distance_bias: 90.0
+  sim_time: 3.0  # Tăng thời gian mô phỏng để có thêm thông tin lập kế hoạch
+  sim_granularity: 0.005  # Giảm độ phân giải mô phỏng để có bước mô phỏng mượt mà hơn
+  angular_sim_granularity: 0.005  # Giảm độ phân giải góc để có bước mô phỏng góc mượt mà hơn
+  vx_samples: 15  # Tăng số lượng mẫu tốc độ tuyến tính để có thêm tùy chọn quỹ đạo
+  vtheta_samples: 15  # Tăng số lượng mẫu tốc độ góc để có thêm tùy chọn quỹ đạo
+  controller_frequency: 10.0
+  oscillation_reset_dist: 0.1  # Tăng khoảng cách reset dao động để tránh tình trạng xoay tại chỗ
+  dwa: true 

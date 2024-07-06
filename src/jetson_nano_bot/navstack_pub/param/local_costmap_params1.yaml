@@ -1,0 +1,17 @@
+local_costmap:
+  global_frame: odom
+  robot_base_frame: base_link
+  update_frequency: 10.0
+  publish_frequency: 10.0
+  transform_tolerance: 0.5
+  rolling_window: true
+  resolution: 0.1
+  inflation_radius: 0.3
+  width: 3.0
+  height: 3.0
+  clear_nonobserved_range: false  # Thêm dòng này
+  
+  plugins:
+    - {name: static_layer,  type: "costmap_2d::StaticLayer"}
+    - {name: obstacle_layer, type: "costmap_2d::ObstacleLayer"}
+    - {name: inflation_layer, type: "costmap_2d::InflationLayer"}
